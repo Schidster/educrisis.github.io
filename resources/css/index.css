@@ -5,6 +5,9 @@
     text-align: center;
     box-sizing: border-box;
     color: white;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
 }
 
 body {
@@ -18,6 +21,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 10px;
 }
 
 header div p {
@@ -39,9 +44,45 @@ div p {
 
 nav li:hover {
     background-color: white;
-    box-shadow: 0.2rem 0.2rem 0.125rem darkred;
+    box-shadow: 0.5rem 0.4rem 0.125rem darkred;
     color: black;
+    transform: translateY(4px);
 }
 nav li {
     display: inline-flex;
+}
+
+.button {
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s; 
+    transform: rotateZ(180deg);
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.125rem darkred;
+    color: black;   
+    transform: rotateZ(360deg);
+}
+
+.quote-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.quote {
+    width: 75%;
+    height: auto;
+    background: radial-gradient(#720017,#000000, #000000, #000000);
+    font-family: "Indie flower", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.quote:hover {
+    background: radial-gradient(#720017,#000000);
+
 }
