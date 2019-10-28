@@ -1,0 +1,47 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: inherit;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: #000;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div p {
+    display: inline-block;
+}
+
+nav li {
+    list-style: none;
+    padding: 0.25rem;
+    border: 1px solid transparent;
+    margin: 0.25rem;
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+
+}
+
+div p {
+    font-size: 3rem;
+}
+
+nav li:hover {
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.125rem darkred;
+    color: black;
+}
+nav li {
+    display: inline-flex;
+}
