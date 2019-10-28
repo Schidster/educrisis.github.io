@@ -71,6 +71,7 @@ nav li {
     margin: 10px;
     border: 1px solid transparent;
     overflow: hidden;
+    flex-wrap: wrap;;
 }
 
 .quote {
@@ -80,9 +81,5 @@ nav li {
     font-family: "Indie flower", cursive;
     font-size: 3rem;
     font-weight: bold;
-}
-
-.quote:hover {
-    background: radial-gradient(#720017,#000000);
-
+    max-width: 30rem;
 }
