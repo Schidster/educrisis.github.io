@@ -8,6 +8,7 @@
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 body {
@@ -33,7 +34,7 @@ nav li {
     list-style: none;
     padding: 0.25rem;
     border: 1px solid transparent;
-    margin: 0.25rem;
+    margin: 0.5rem;
     transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 
 }
