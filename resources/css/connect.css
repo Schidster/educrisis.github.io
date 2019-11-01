@@ -1,0 +1,100 @@
+* {
+  border: 0;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  overflow: hidden;
+}
+
+body {
+  background: #000;
+  height: 100rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 2em;
+  border: #1b1e23 solid 1px;
+  padding: 5px;
+  position: fixed;
+  width: 90%;
+}
+
+header .menu {
+  float: left;
+  width: 4em;
+  height: 3em;
+}
+
+header .menu-button {
+  -webkit-transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  top: 0.25em;
+}
+
+header .menu-button:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.2em 0.2em 0.125rem darkred;
+          box-shadow: 0.2em 0.2em 0.125rem darkred;
+  color: black;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+header p {
+  font-size: 3rem;
+  display: inline-block;
+}
+
+header nav li {
+  -webkit-transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  margin: 0.5rem;
+  color: red;
+}
+
+header nav li:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.125rem darkred;
+          box-shadow: 0.5rem 0.5rem 0.125rem darkred;
+  color: black;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+header a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  position: relative;
+  top: 8em;
+}
+/*# sourceMappingURL=connect.css.map */
