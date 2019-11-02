@@ -12,9 +12,9 @@
   overflow: hidden;
 }
 
-body {
+html, body {
   background: #000;
-  height: 100rem;
+  height: 100%;
 }
 
 header {
@@ -93,8 +93,113 @@ header a {
 }
 
 main {
-  display: block;
-  position: relative;
-  top: 8em;
+  margin: 100px auto;
+  width: 90%;
+}
+
+@media (max-width: 598px) {
+  main {
+    margin: 160px auto;
+  }
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20em;
+  background-color: transparent;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.welcome-container .quote {
+  background-image: url("../tiles_bg/tile1.png");
+  background-size: auto;
+  margin: 1em;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 50%;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.welcome-container .quote:hover {
+  -webkit-box-shadow: 0 0 10px #13F4EF;
+          box-shadow: 0 0 10px #13F4EF;
+}
+
+.welcome-container .quote-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-container .quote-tile:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-container .quote-content {
+  background-image: url("../tiles_bg/tile2.png");
+  background-size: auto;
+  margin: 1em;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  height: 30%;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.welcome-container .quote-content:hover {
+  -webkit-box-shadow: 0 0 10px #FAFF00;
+          box-shadow: 0 0 10px #FAFF00;
+}
+
+.welcome-container .quote-content-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-container .quote-content-tile:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=index.css.map */

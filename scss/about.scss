@@ -1,1 +1,15 @@
-@import './universal'
+@import './universal' ;
+
+
+.container {
+    @include container(200px, 90%);
+}
+
+.about {
+    @include tilebase('tile3.png', #68ff00, 100%, 80%);
+}
+
+main h1 {
+    padding: 1em;
+    .at {color:red;}
+}

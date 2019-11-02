@@ -12,9 +12,9 @@
   overflow: hidden;
 }
 
-body {
+html, body {
   background: #000;
-  height: 100rem;
+  height: 100%;
 }
 
 header {
@@ -93,8 +93,13 @@ header a {
 }
 
 main {
-  display: block;
-  position: relative;
-  top: 8em;
+  margin: 100px auto;
+  width: 90%;
+}
+
+@media (max-width: 598px) {
+  main {
+    margin: 160px auto;
+  }
 }
 /*# sourceMappingURL=connect.css.map */

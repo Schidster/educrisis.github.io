@@ -1,1 +1,14 @@
 @import './universal';
+
+.welcome-container {
+    @include container(20em);
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+.quote {
+    @include tilebase('tile1.png', 2, 50%, 50%)}
+
+.quote-content {
+    @include tilebase('tile2.png', 4, 40%, 30%)}
+}
+

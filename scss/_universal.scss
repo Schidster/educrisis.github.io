@@ -1,15 +1,25 @@
+
+$transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+//tile colors
+$tilecolor:( 
+    0:#6E0DD0,
+    1:#006FFF,
+    2:#13F4EF,
+    3:#68FF00,
+    4:#FAFF00,
+    5:#FFBF00,
+    6:#FB33DB,
+    7:#FF005C);
+
+
 @mixin flexit {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
+    // flex-wrap: wrap;
 }
-
-@mixin tileit {
-
-}
-
-$transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 
 @mixin btn-transiton {
     transition: background-color $transition,
@@ -17,6 +27,36 @@ $transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
     color $transition,
     transform $transition; 
 }
+
+@mixin container($height, $bgcolor: transparent) {
+    @include flexit();
+    width: 100%;
+    height: $height;
+    background-color: $bgcolor;
+}
+
+@mixin tilebase($bg_name, $colorkey, $width, $height) {
+    background-image: url('../tiles_bg/'+$bg_name);
+    background-size: auto;
+    margin: 1em;
+    flex-basis: $width;
+    height: $height;
+    transition: box-shadow $transition;
+    
+    &:hover{
+     box-shadow: 0 0 10px map-get($tilecolor, $colorkey );}
+    
+    &-tile {
+    @include flexit();
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    transition: $transition;
+    width: 100%;
+    height: 100%;
+    
+    &:hover{
+    background-color: rgba($color: #000000, $alpha: 0.5);}}
+}
+
 
 * {
     border: 0;
@@ -29,9 +69,9 @@ $transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
     overflow: hidden;
 }
 
-body {
+ html, body {
     background: #000;
-    height: 100rem;
+    height: 100%;
 }
 
 header {
@@ -83,7 +123,12 @@ header {
 }
 
 main {
-    display: block;
-    position: relative;
-    top: 8em;
+    margin: 100px auto;
+    width: 90%;
+}
+
+@media (max-width: 598px) {
+    main {
+        margin: 160px auto;
+    }
 }

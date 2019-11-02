@@ -12,9 +12,9 @@
   overflow: hidden;
 }
 
-body {
+html, body {
   background: #000;
-  height: 100rem;
+  height: 100%;
 }
 
 header {
@@ -93,8 +93,77 @@ header a {
 }
 
 main {
-  display: block;
-  position: relative;
-  top: 8em;
+  margin: 100px auto;
+  width: 90%;
+}
+
+@media (max-width: 598px) {
+  main {
+    margin: 160px auto;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: 90%;
+}
+
+.about {
+  background-image: url("../tiles_bg/tile3.png");
+  background-size: auto;
+  margin: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 80%;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.about:hover {
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+.about-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.about-tile:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+  padding: 1em;
+}
+
+main h1 .at {
+  color: red;
 }
 /*# sourceMappingURL=about.css.map */
